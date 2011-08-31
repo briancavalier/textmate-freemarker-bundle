@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;@spring.formInput path="${1:path}"/&gt;$0</string>
+	<key>name</key>
+	<string>@spring.formInput</string>
+	<key>scope</key>
+	<string>text.html.ftl</string>
+	<key>tabTrigger</key>
+	<string>@sfi</string>
+	<key>uuid</key>
+	<string>842278DB-AA00-4D84-863D-DD3BAC61DE56</string>
+</dict>
+</plist>

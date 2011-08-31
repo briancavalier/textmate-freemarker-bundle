@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;@spring.theme code="$1"/&gt;$0</string>
+	<key>name</key>
+	<string>@spring.theme</string>
+	<key>scope</key>
+	<string>text.html.ftl</string>
+	<key>tabTrigger</key>
+	<string>@st</string>
+	<key>uuid</key>
+	<string>3CC400CD-0BC9-46AE-8613-5046AD988534</string>
+</dict>
+</plist>

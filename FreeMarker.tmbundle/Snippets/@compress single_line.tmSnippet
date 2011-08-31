@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${TM_SELECTED_TEXT/\A(\s*).*/$1/m}&lt;@compress single_line=true&gt;
+${TM_SELECTED_TEXT/^.+$/\t$0/g}${TM_SELECTED_TEXT/\A(\s*).*/$1/m}
+${TM_SELECTED_TEXT/\A(\s*).*/$1/m}&lt;/@compress&gt;
+$0</string>
+	<key>keyEquivalent</key>
+	<string>^W</string>
+	<key>name</key>
+	<string>@compress single_line</string>
+	<key>scope</key>
+	<string>text.html.ftl</string>
+	<key>uuid</key>
+	<string>F9B9BA97-483F-4E3E-91EF-41D3A8C055B3</string>
+</dict>
+</plist>
