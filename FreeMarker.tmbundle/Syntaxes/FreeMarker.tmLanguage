@@ -26,7 +26,7 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>\&lt;\#--</string>
+			<string>(?:&lt;|\[)\#--</string>
 			<key>captures</key>
 			<dict>
 				<key>0</key>
@@ -36,7 +36,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>--\&gt;</string>
+			<string>--(?:\&gt;|\])</string>
 			<key>name</key>
 			<string>comment.block.ftl</string>
 		</dict>
@@ -70,7 +70,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(\&lt;(#|@))(\w+(\.\w+)*)((\s+[^&gt;]+)*?)\s*(\/?\&gt;)</string>
+			<string>((?:\&lt;|\[)(#|@))(\w+(\.\w+)*)((\s+[^&gt;\]]+)*?)\s*(\/?(?:\&gt;|\]))</string>
 			<key>name</key>
 			<string>meta.function.ftl</string>
 		</dict>
@@ -99,7 +99,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(\&lt;\/(#|@))(\w+(\.\w+)*)\s*(\&gt;)</string>
+			<string>((?:\&lt;|\[)\/(#|@))(\w+(\.\w+)*)\s*(\&gt;|\])</string>
 			<key>name</key>
 			<string>meta.function.ftl</string>
 		</dict>
