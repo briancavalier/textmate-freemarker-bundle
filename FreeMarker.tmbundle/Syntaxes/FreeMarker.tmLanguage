@@ -63,14 +63,19 @@
 					<key>name</key>
 					<string>variable.parameter.function.ftl</string>
 				</dict>
-				<key>7</key>
+				<key>8</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.ftl</string>
+				</dict>
+				<key>9</key>
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.function.ftl</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>([&lt;\[](#|@))(\w+(\.\w+)*)((\s+[^&gt;\]]+)*?)\s*(\/?[&gt;\]])</string>
+			<string>([&lt;\[](#|@))(\w+(\.\w+)*)((\s+[^&gt;\]]+)*?)\s*((\/)?([&gt;\]]))</string>
 			<key>name</key>
 			<string>meta.function.ftl</string>
 		</dict>
@@ -123,7 +128,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(\$\{)[a-zA-Z_\(][\w\(\)+-\/\*]+(\.?[\w\(\)+-\/\*]+)*(.*?|\?\?|\!)?(\})</string>
+			<string>(\$\{)\.?[a-zA-Z_\(][\w\(\)+-\/\*]+(\.?[\w\(\)+-\/\*]+)*(.*?|\?\?|\!)?(\})</string>
 			<key>name</key>
 			<string>variable.other.readwrite.local.ftl</string>
 		</dict>
