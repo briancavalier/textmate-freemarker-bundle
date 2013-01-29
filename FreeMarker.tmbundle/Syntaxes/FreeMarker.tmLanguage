@@ -8,15 +8,17 @@
 	</array>
 	<key>foldingStartMarker</key>
 	<string>(?x)
-		(&lt;(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)\b.*?&gt;
+		(&lt;(?i:head|body|table|thead|tbody|tfoot|tr|div|nav|section|aside|header|select|fieldset|style|script|ul|ol|form|dl)\b.*?&gt;
 		|&lt;!--(?!.*--&gt;)
 		|\{\s*($|\?&gt;\s*$|//|/\*(.*\*/\s*$|(?!.*?\*/)))
+		|\[(\#|@)\w+.*\]
 		)</string>
 	<key>foldingStopMarker</key>
 	<string>(?x)
-		(&lt;/(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)&gt;
+		(&lt;/(?i:head|body|table|thead|tbody|tfoot|tr|div|nav|section|aside|header|select|fieldset|style|script|ul|ol|form|dl)&gt;
 		|^\s*--&gt;
 		|(^|\s)\}
+		|\[/(\#|@)\w+.*\]
 		)</string>
 	<key>keyEquivalent</key>
 	<string>^~F</string>
