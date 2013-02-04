@@ -20,5 +20,4 @@ This is a very simple [TextMate](http://www.macromates.com) Bundle to help with 
 
 ## License
 
-Copyright &copy; 2008-2013 Brian Cavalier
-MIT License
+Copyright &copy; 2008-2013 Brian Cavalier, MIT License
