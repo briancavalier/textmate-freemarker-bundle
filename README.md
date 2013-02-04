@@ -18,7 +18,7 @@ This is a very simple [TextMate](http://www.macromates.com) Bundle to help with 
  * A few useful snippets for Freemarker tags.
  * One simple HTML template.
 
- ## License
+## License
 
- Copyright &copy; 2008-2013 Brian Cavalier
- MIT License
+Copyright &copy; 2008-2013 Brian Cavalier
+MIT License
