@@ -1,7 +1,6 @@
 This is a very simple [TextMate](http://www.macromates.com) Bundle to help with editing [FreeMarker](http://freemarker.org/ FreeMarker) templates.  It provides a (still incomplete) language definition, and some basic snippets, including some for Spring macros.
 
-Changelog
-=========
+## Changelog
 
 ### Version 1.2
 
@@ -18,3 +17,8 @@ Changelog
  * Very minimal Language definition that mostly plays well with HTML, but not completely.
  * A few useful snippets for Freemarker tags.
  * One simple HTML template.
+
+ ## License
+
+ Copyright &copy; 2008-2013 Brian Cavalier
+ MIT License
