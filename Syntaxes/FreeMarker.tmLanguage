@@ -8,15 +8,17 @@
 	</array>
 	<key>foldingStartMarker</key>
 	<string>(?x)
-		(&lt;(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)\b.*?&gt;
+		(&lt;(?i:head|body|table|thead|tbody|tfoot|tr|div|nav|section|aside|header|select|fieldset|style|script|ul|ol|form|dl)\b.*?&gt;
 		|&lt;!--(?!.*--&gt;)
 		|\{\s*($|\?&gt;\s*$|//|/\*(.*\*/\s*$|(?!.*?\*/)))
+		|(\[|&lt;)(\#|@)\w+.*\(\]|&gt;)
 		)</string>
 	<key>foldingStopMarker</key>
 	<string>(?x)
-		(&lt;/(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)&gt;
+		(&lt;/(?i:head|body|table|thead|tbody|tfoot|tr|div|nav|section|aside|header|select|fieldset|style|script|ul|ol|form|dl)&gt;
 		|^\s*--&gt;
 		|(^|\s)\}
+		|(\[|&lt;)/(\#|@)\w+.*(\]|&gt;)
 		)</string>
 	<key>keyEquivalent</key>
 	<string>^~F</string>
@@ -63,14 +65,19 @@
 					<key>name</key>
 					<string>variable.parameter.function.ftl</string>
 				</dict>
-				<key>7</key>
+				<key>8</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.ftl</string>
+				</dict>
+				<key>9</key>
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.function.ftl</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>([&lt;\[](#|@))(\w+(\.\w+)*)((\s+[^&gt;\]]+)*?)\s*(\/?[&gt;\]])</string>
+			<string>([&lt;\[](#|@))(\w+(\.\w+)*)((\s+[^&gt;\]]+)*?)\s*((\/)?([&gt;\]]))</string>
 			<key>name</key>
 			<string>meta.function.ftl</string>
 		</dict>
@@ -123,7 +130,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(\$\{)[a-zA-Z_\(][\w\(\)+-\/\*]+(\.?[\w\(\)+-\/\*]+)*(.*?|\?\?|\!)?(\})</string>
+			<string>(\$\{)\.?[a-zA-Z_\(][\w\(\)+-\/\*]+(\.?[\w\(\)+-\/\*]+)*(.*?|\?\?|\!)?(\})</string>
 			<key>name</key>
 			<string>variable.other.readwrite.local.ftl</string>
 		</dict>
